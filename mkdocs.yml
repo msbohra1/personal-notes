@@ -1,0 +1,70 @@
+site_name: Manoj's Notes
+site_url: https://msbohra1.github.io/personal-notes/
+repo_url: https://github.com/msbohra1/personal-notes
+repo_name: msbohra1/personal-notes
+edit_uri: edit/main/notes/
+
+docs_dir: notes
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - navigation.instant
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.action.edit
+    - toc.follow
+
+hooks:
+  - hooks.py
+
+markdown_extensions:
+  - tables
+  - attr_list
+  - md_in_html
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+
+plugins:
+  - search
+  - exclude-search:
+      exclude:
+        - log.md
+  - roamlinks
+
+nav:
+  - Home:
+    - index.md
+    - Embeddings: Embeddings.md
+    - Python: Python.md
+    - Data: Data.md
+    - Climate Change: Climate_Change.md
+    - Urban Planning: Urban_Planning.md
+    - Agriculture: Agriculture.md
+    - Remote Sensing: Remote_Sensing.md
+    - Changelog: log.md
