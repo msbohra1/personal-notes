@@ -5,4 +5,4 @@
 
 ---
 
-Related: [[Climate_Change]]
+Related: [[Climate_Change]], [[SQL]]
